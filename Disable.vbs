@@ -2,7 +2,7 @@ Dim objShell
 Dim result
 Dim warning
 warning = MsgBox("Beware you might have to do this script 2 times, for some reason sometimes it won't close", 48 , "WARNING")
-result = msgbox("Select Yes to deactivate NetRef. Or select No to enable Netref", 4 , "Toggle NetRef made by noCOMlegion")
+result = msgbox("Select Yes to deactivate NetRef. Or select No to enable Netref", 4 , "Toggle NetRef made by noCOM")
 If result=6 then
 
 KillProc "WinNetRef.exe"
