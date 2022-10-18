@@ -2,7 +2,7 @@ Dim objShell
 Dim result
 Dim warning
 warning = MsgBox("Beware you might have to do this script 2 times, for some reason sometimes it won't close", 48 , "WARNING")
-result = msgbox("Select Yes to deactivate NetRef. Or select No to enable Netref", 4 , "Toggle NetRef made by noCOM")
+result = msgbox("Select Yes to deactivate the monitoring system. Or select No to enable the monitoring system", 4 , "Toggle the monitoring system made by noCOM")
 If result=6 then
 
 KillProc "WinNetRef.exe"
@@ -49,7 +49,7 @@ Loop
 End If
 End Sub
 
-msgbox "You have successfully disabled NetRef."
+msgbox "You have successfully disabled the monitoring system."
 else
 
 
@@ -61,5 +61,5 @@ Set objShell = WScript.CreateObject( "WScript.Shell" )
 objShell.Run("""C:\Program Files (x86)\NetRef\NetRef Student\WinNetRef.exe""")
 Set objShell = Nothing
 
-msgbox "You have successfully enabled NetRef."
+msgbox "You have successfully enabled the monitoring system."
 end if
